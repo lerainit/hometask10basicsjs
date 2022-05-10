@@ -9,9 +9,9 @@ const showContent = (elem, content) => {
 
   content.forEach(item => item.classList.remove('active'))
 
-  let currentElem = document.querySelector(`${elem.dataset.content}`);
+  let currentContent = document.querySelector(`${elem.dataset.content}`);
 
-  return currentElem.classList.add('active')
+  return currentContent.classList.add('active')
 
 }
 
