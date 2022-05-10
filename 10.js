@@ -5,7 +5,7 @@ const contents = document.querySelectorAll('.tabs-content li')
 const table = document.querySelector('.tabs');
 
 
-function showContent(elem, content) {
+const showContent = (elem, content) => {
 
   content.forEach(item => item.classList.remove('active'))
 
