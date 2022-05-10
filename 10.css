@@ -31,13 +31,14 @@
         }
 
 
-        .tabs-item{display: none; width: 400px;
-           height: 300px;
-           margin: 0 auto;}
+        .tabs-item{
+            display: none;
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;}
 
          .tabs-item.active{
 
            display: block;
           
-
          }
