@@ -2,8 +2,6 @@
 
 const contents = document.querySelectorAll('.tabs-content li')
 
-//const buttons = document.querySelectorAll('.tabs li')
-
 const table = document.querySelector('.tabs');
 
 
@@ -16,8 +14,6 @@ function showContent(elem, content) {
   return currentElem.classList.add('active')
 
 }
-
-// buttons.forEach( item =>item.onclick = () => showContent(item,contents))
 
 table.addEventListener('click', (e) => {
   let target = e.target;
