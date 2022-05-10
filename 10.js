@@ -1,6 +1,6 @@
 "use strict"
 
-const contents = document.querySelectorAll('.tabs-content li')
+const contents = document.querySelectorAll('.tabs-content li');
 
 const table = document.querySelector('.tabs');
 
