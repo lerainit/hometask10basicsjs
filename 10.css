@@ -1,0 +1,43 @@
+ ul {
+            list-style: none;
+            padding-left: 0; 
+
+        }
+
+        .centered-content {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+          
+           align-items: center;
+
+        }
+
+        .tabs {
+            display: flex;
+
+        }
+
+        .tabs-title {
+            padding: 20px;
+            background-color: #23201D;
+            color: #937341;
+            cursor: pointer;
+        }
+
+        .tabs-title.first {
+            background-color:#937341 ;
+            color: #23201D;
+        }
+
+
+        .tabs-item{display: none; width: 400px;
+           height: 300px;
+           margin: 0 auto;}
+
+         .tabs-item.active{
+
+           display: block;
+          
+
+         }
