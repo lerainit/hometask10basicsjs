@@ -21,7 +21,7 @@ function showContent(elem, content) {
 
 }
 
-// buttons.forEach( item =>item.onclick = () => showContent(item,contents))
+
 
 table.addEventListener('click', (e) => {
   let target = e.target;
