@@ -1,19 +1,27 @@
 "use strict"
 
-const contents = document.querySelectorAll('.tabs-content li');
+const contents = document.querySelectorAll('.tabs-content li')
+
+const buttons = document.querySelectorAll('.tabs li')
 
 const table = document.querySelector('.tabs');
 
+const Akali = document.querySelector('#Akali')
 
-const showContent = (elem, content) => {
+Akali.classList.add('active')
+
+
+function showContent(elem, content) {
 
   content.forEach(item => item.classList.remove('active'))
 
-  let currentContent = document.querySelector(`${elem.dataset.content}`);
+  let currentElem = document.querySelector(`${elem.dataset.content}`);
 
-  return currentContent.classList.add('active')
+  return currentElem.classList.add('active')
 
 }
+
+// buttons.forEach( item =>item.onclick = () => showContent(item,contents))
 
 table.addEventListener('click', (e) => {
   let target = e.target;
@@ -21,6 +29,10 @@ table.addEventListener('click', (e) => {
   if (target.tagName != 'LI') return;
 
   showContent(target, contents);
+
+buttons.forEach(button => button.classList.remove('first'))
+
+target.classList.add('first')
 
 })
 
